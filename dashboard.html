@@ -4,28 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panel Principal - SAOP</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-dash.css">
 </head>
 <body>
   <div class="dashboard-container d-flex">
     <!-- Sección izquierda: Perfil del usuario -->
     <div class="sidebar">
-      <img src="profile-placeholder.png" alt="Foto de perfil" class="profile-img">
+      <img src="IMG/profile-placeholder.png" alt="Foto de perfil" class="profile-img">
       <div class="user-info">
         <p><strong>ID:</strong> <span id="userID"></span></p>
         <p><strong>Nombre:</strong> <span id="userName"></span></p>
       </div>
       <button class="btn btn-config">Configuración</button>
-      <button class="btn btn-logout">Cerrar Sesión</button>
+      <button id="logoutButton">Cerrar Sesión</button>
     </div>
 
     <!-- Sección derecha: Contenido principal -->
     <div class="main-content">
       <h1>¡Bienvenido al panel principal de SAOP!</h1>
       <p>Aquí podrás acceder a las funciones principales del sistema.</p>
+
+      <!-- Menú 1: Selección de grupos -->
+      <div id="menu1" class="menu">
+        <h2>Grupos</h2>
+        <div id="groupList" class="group-list">
+          <!-- Lista dinámica de grupos -->
+        </div>
+      </div>
+
+      <!-- Menú 2: Detalles del grupo seleccionado -->
+      <div id="menu2" class="menu" style="display: none;">
+        <h2>Detalles del Grupo</h2>
+        
+        <!-- Botón para regresar a grupos -->
+        <button id="backToGroups">Regresar a Grupos</button>
+
+        <!-- Sección 1: Resumen de Estudiantes -->
+        <div class="section">
+          <h3>Resumen de Estudiantes</h3>
+          <ul id="studentSummary">
+            <!-- Lista dinámica de estudiantes -->
+          </ul>
+        </div>
+        
+        <!-- Sección 2: Alertas Activas -->
+        <div class="section">
+          <h3>Alertas Activas</h3>
+          <ul id="activeAlerts">
+            <!-- Lista dinámica de alertas -->
+          </ul>
+          <button id="calculateAverage">Calcular Promedio</button>
+          <button id="generateReport">Generar Reporte</button>
+        </div>
+      </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script-dash.js"></script>
 </body>
 </html>
