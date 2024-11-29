@@ -1,0 +1,85 @@
+/* styles-prom.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .main-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #backToDashboard {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #backToDashboard:hover {
+    background-color: #218838;
+  }
+  
+  .buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  table td input {
+    width: 30px;  /* Ajustar el ancho */
+    height: 20px; /* Ajustar la altura */
+    font-size: 14px; /* Ajustar el tamaño de la fuente */
+    padding: 2px; /* Ajustar el padding */
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  table td.average-risk {
+    color: red;
+    font-weight: bold;
+  }
+  

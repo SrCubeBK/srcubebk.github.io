@@ -38,16 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const students = {
       1: [
-        { name: "Estudiante 1", status: "Aprobado" },
-        { name: "Estudiante 2", status: "En riesgo" },
+        { name: "Fernanda Garza", status: "Aprobado" },
+        { name: "Jose Cruz", status: "En riesgo" },
       ],
       2: [
-        { name: "Estudiante 3", status: "Aprobado" },
-        { name: "Estudiante 4", status: "En riesgo" },
+        { name: "Diana Díaz", status: "Aprobado" },
+        { name: "Ricardo Lopez", status: "En riesgo" },
       ],
       3: [
-        { name: "Estudiante 5", status: "Aprobado" },
-        { name: "Estudiante 6", status: "En riesgo" },
+        { name: "Maria Sanchez", status: "Aprobado" },
+        { name: "Carlos Hernandez", status: "En riesgo" },
       ],
     };
   
@@ -88,13 +88,14 @@ document.addEventListener("DOMContentLoaded", () => {
         activeAlerts.appendChild(listItem);
       });
   
-      // Funcionalidad de botones
-      document.getElementById("calculateAverage").addEventListener("click", () => {
-        alert("Cálculo de promedio en desarrollo.");
-      });
+        // Funcionalidad de botones
+    document.getElementById("calculateAverage").addEventListener("click", () => {
+    window.location.href = "promedio.html"; // Redirige a la nueva pantalla
+  });
+
   
-      document.getElementById("generateReport").addEventListener("click", () => {
-        alert("Generación de reporte en desarrollo.");
+  document.getElementById("generateReport").addEventListener("click", () => { 
+    window.location.href = "reportes.html"; // Redirige a la nueva pantalla de generación de reportes });
       });
   
       // Funcionalidad del botón para regresar a grupos

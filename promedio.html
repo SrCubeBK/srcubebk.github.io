@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular Promedio - SAOP</title>
+  <link rel="stylesheet" href="styles-prom.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <h1>Calcular Promedio</h1>
+
+    <!-- Botón para regresar al dashboard -->
+    <button id="backToDashboard">Regresar al Dashboard</button>
+
+    <div class="buttons">
+      <button id="calculateAverage">Calcular Promedio</button>
+      <button id="saveResults">Guardar</button>
+      <button id="exportToPdf">Exportar a PDF</button>
+      <button id="addStudent">Agregar Alumno</button>
+      <button id="addActivity">Agregar Actividad</button>
+    </div>
+
+    <table id="studentsTable">
+      <thead>
+        <tr>
+          <th># de lista</th>
+          <th>Nombre</th>
+          <!-- Encabezados para cada parcial y actividades -->
+          <th colspan="10">Parcial 1</th>
+          <th colspan="10">Parcial 2</th>
+          <th colspan="10">Parcial 3</th>
+          <th>Promedio Final</th>
+        </tr>
+        <tr>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas dinámicas de estudiantes -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script-prom.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generar Reporte - SAOP</title>
+  <link rel="stylesheet" href="styles-report.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <h1>Generar Reporte</h1>
+
+    <!-- Botón para regresar al dashboard -->
+    <button id="backToDashboard">Regresar al Dashboard</button>
+
+    <div class="report-section">
+      <!-- Tabla 1 -->
+      <table id="reportFilters">
+        <thead>
+          <tr>
+            <th>Seleccionar clase o grupo</th>
+            <th>Periodo de tiempo</th>
+            <th>Nombre del Estudiante</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <select id="classGroup">
+                <!-- Opciones dinámicas de clases o grupos -->
+              </select>
+            </td>
+            <td>
+              <select id="timePeriod">
+                <option value="semestre1">Semestre 1</option>
+                <option value="semestre2">Semestre 2</option>
+              </select>
+            </td>
+            <td>
+              <select id="studentNameFilter">
+                <!-- Opciones dinámicas de nombres de estudiantes -->
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <!-- Tabla 2 -->
+      <table id="reportTable">
+        <thead>
+          <tr>
+            <th>Rendimiento Global</th>
+            <th>Fecha del reporte</th>
+            <th>Nombre del Estudiante</th>
+            <th>Opción para seleccionar Reporte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filas dinámicas de reportes -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="buttons">
+      <button id="generateReport">Generar Reporte</button>
+      <button id="exportToPdf">Exportar a PDF</button>
+      <button id="sendEmail">Enviar por Correo</button>
+    </div>
+
+  </div>
+
+  <script src="script-report.js"></script>
+</body>
+</html>
