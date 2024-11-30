@@ -11,7 +11,7 @@ body {
   .sidebar {
     width: 250px;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #01488f;
     border-right: 1px solid #ccc;
   }
   
@@ -24,19 +24,14 @@ body {
   .user-info {
     margin-top: 20px;
   }
-  
-  .btn {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+
+  strong {
+    color: white;
+
   }
+  
+
+  
   
   .btn:hover {
     background-color: #0056b3;
@@ -60,7 +55,7 @@ body {
   .group-list button {
     padding: 15px;
     font-size: 18px;
-    background-color: #28a745;
+    background-color: #089c08;
     color: #fff;
     border: none;
     border-radius: 5px;

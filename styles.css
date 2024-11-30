@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
   }
   
   .login-container {
@@ -14,7 +14,9 @@ body {
     height: 80vh;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.342);
+    background-color: #152039; /* Fondo gris fuerte */ 
+    display: flex;
   }
   
   .profile-img {
@@ -26,11 +28,15 @@ body {
   body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #000000;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+label {
+  color: #f4f4f4;
 }
 
 .dashboard-container {

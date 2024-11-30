@@ -6,9 +6,9 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
   // Lista de usuarios válidos
   const users = [
-    { id: "11101", password: "111111", name: "María" },
-    { id: "11102", password: "111112", name: "Carlos" },
-    { id: "11103", password: "111113", name: "Ana" },
+    { id: "11101", password: "111111", name: "María Gonzalez" },
+    { id: "11102", password: "111112", name: "Carlos Martinez" },
+    { id: "11103", password: "111113", name: "Ana Rodriguez" },
   ];
 
   // Validación
